@@ -1,0 +1,152 @@
+@import url('reset.css');
+
+*{
+    font-family: Roboto;
+}
+
+.menu{
+   display: grid;
+   grid-template: 56px / repeat(3, 1fr);
+   padding: 0 24px 0 24px;
+}
+
+#left-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#menu-img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    padding-right: 32px;
+}
+
+#youtube-img{
+    width: 90px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+#center-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar{
+    width: 348px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid #CCC;
+    background: #FFF;
+}
+
+#search{
+    width: 57px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid #CCC;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+#video-img{
+    width: 24px;
+    height: 24px;
+    padding-right: 24px;
+}
+
+#avatar-img{
+    width: 34px;
+    height: 34px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 230px repeat(4, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    grid-template-areas: 
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main";
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 14px;
+    grid-area: main;
+    margin: 24px 28px;
+    justify-items: center;
+}
+
+#video-details{
+    display: grid;
+    grid-template-columns: 52px 197px;
+}
+
+h1{
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+p{
+    margin: 0;
+    color: #515151;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+aside{
+    grid-area: sidebar;
+    margin: 24px;
+}
+
+#menu-item{
+    padding: 12px 0 12px 0;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#menu-item-start{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-bottom: 12px;
+}
+
+aside img{
+    padding-right: 8px;
+}
